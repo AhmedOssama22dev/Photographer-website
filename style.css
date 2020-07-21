@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height:100%;
+	width: 100%;
+}
+h2{
+	font-family: 'Playfair Display',serif;
+	font-size: 200%;
+	font-weight: 700
+	color: #2C2C2C;
+	text-align: center;
+}
+p{
+	font-family: 'Raleway', serif;
+	font-size: 140%
+	color:#2C2C2C;
+	line-height: 180%
+	text-align:justify;
+	font-weight: 300;
+}
+img{
+	text-align: center;
+	max-width: 50%
+	height:auto;
+	width: auto;
+}
+.intro{
+	height: 100%;
+	width:100%;
+	margin:auto;
+	background: url(https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg) no-repeat 50% 50%;
+	background-repeat: none;
+	background-size: cover;
+	
+	transition: 5s;
+
+	animation-name: my_animation;
+	animation-direction: alternate-reverse;
+	animation-duration: 25s;
+	animation-fill-mode: forwards;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	display: table;
+	top: 0;
+}
+
+@keyframes my_animation{
+	0%{ background: url(https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg)no-repeat 50% 50%;background-size: cover; }
+	50%{background: url(https://images.pexels.com/photos/3585806/pexels-photo-3585806.jpeg)no-repeat 50% 50%;background-size: cover;}
+	100%{background: url(https://images.pexels.com/photos/1045541/pexels-photo-1045541.jpeg)no-repeat 50% 50%;background-size: cover;}
+	
+}
+.intro.inner{
+	display: table-cell;
+	vertical-align: middle;
+	width: 100%;
+	max-width: none;
+}
+
+.content{
+	max-width: 600px;
+	margin: auto;
+	color: #fff;
+}
+h1{
+	font-family: 'Playfair Display',serif;
+	font-size: 300%;
+	font-weight:  700;
+	color: #fff;
+	text-align: center;
+	padding: 2%;
+	text-shadow: 0px 0px 250px #000;
+}
+h1:hover{
+	color: #404040
+}
+.content p{
+	color: #fff;
+	text-align: center;
+}
+.content p:hover{
+	color: #404040
+}
+.inner{
+	max-width: 600%
+	margin:auto;
+	font-size: 170%;
+	padding: 10px;
+}
+/*Here is the nav bar*/
+.left-col{
+	width: 60%;
+	float: left;
+	margin: 4% 0 4% 4%;
+}
+.sidebar{
+	width: 26%;
+	float: left;
+	margin: 4%;
+}
+
+/*Navigation*/
+nav{
+	float: left;
+	padding: 5% 5% 0 0;
+	height: 50px;
+}
+nav ul{
+	list-style: none;
+	float: left;
+}
+nav ul li{
+	font-family: "Raleway",sans-serif;
+	font-size: 120%
+}
+ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+ul li a:hover{
+	text-decoration: underline;
+	color: #404040
+}
+nav ul,nav:active ul{
+	display: none;
+	padding:8px 0;
+	left: 40px;
+	top: 62px;
+	width: 20%;
+	z-index: 1000;
+}
+nav li{
+	width: 100%;
+	padding: 8px 0 10px 7px;
+	margin: 0;
+}
+nav:hover ul{
+	display: block;
+	position: absolute; 
+}
+#menu-icon{
+	left: 35px;
+	width: 30px;
+	height:26px;
+	background: url(img/nav-icon.png) center;
+	display: inline-block;
+	margin: 16.5px 0 0 16.5px;
+}
