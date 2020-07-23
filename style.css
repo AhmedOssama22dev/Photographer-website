@@ -11,7 +11,7 @@ h2{
 	font-family: 'Playfair Display',serif;
 	font-size: 200%;
 	font-weight: 700
-	color: #2C2C2C;
+	color: #404040;
 	text-align: center;
 }
 p{
@@ -91,7 +91,6 @@ h1:hover{
 	font-size: 170%;
 	padding: 10px;
 }
-/*Here is the nav bar*/
 .left-col{
 	width: 60%;
 	float: left;
@@ -118,7 +117,7 @@ nav ul li{
 	font-size: 120%
 }
 ul li a{
-	color: #fff;
+	color: #000;
 	text-decoration: none;
 }
 ul li a:hover{
@@ -149,4 +148,107 @@ nav:hover ul{
 	background: url(img/nav-icon.png) center;
 	display: inline-block;
 	margin: 16.5px 0 0 16.5px;
+}
+.one-third-port{
+	width: 29.33333%;
+	padding: 2%;
+	float: left;
+}
+.one-third-port img:hover{
+	opacity: .6;
+}
+.contact p {
+	text-indent: center;
+	letter-spacing: 5px;
+}
+.contact a{
+	color: #2C2C2C;
+	text-decoration: none;
+	text-indent: 15%
+}
+.break{
+	display: none;
+}
+.clearfix{
+	clear: both;
+	height: 3%
+}
+.parallax{
+	background: url('https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg') repeat fixed 100%;
+	opacity: .5;
+}
+.parallax-inner{
+	padding-top: 17%;
+}
+.social{
+	list-style-type: none;
+	text-align: center;
+}
+.social li{
+	display: inline;
+}
+.social i{
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	color: #404040
+}
+.social i:hover{
+	opacity: .6;
+}
+footer.second{
+	background-color: #404040
+}
+footer.second p{
+	color: #fff;
+	text-align: center;
+	padding: 5%
+}
+@media screen and (max-width:760px){
+	#menu-icon{
+		margin:26px 0 0 26px;
+	}
+	nav,ul,nav:active ul{
+		padding: 8px 0;
+		left: 23px;
+		top: 34px;
+		width: 50%;
+	}
+	.inner{
+		font-size: 120%;
+	}
+	.content h1{
+		font-size: 180%;
+	}
+	p{
+		font-size: 120%;
+	}
+	h2{
+		font-size: 160%;
+	}
+	.left-col{
+		width: 96%;
+		padding: 0 2%5 0;
+		margin: 0 0 3;
+	}
+	.side-bar{
+		width: 96%;
+		margin: 0 auto;
+	}
+	img{
+		padding: 2%;
+	}
+	.one-third-port{
+		width: 96%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.break{
+		display: block;
+	}
+	.parallax{
+		display: none;
+	}
+	.social i{
+		font-size: 170%;
+	}
 }
